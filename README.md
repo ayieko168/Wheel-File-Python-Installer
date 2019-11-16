@@ -1,0 +1,1 @@
+Wheel-File-Python-Installer is a gui built using pyqt that makes it easy to install python modules bundles as wheel files.
