@@ -1,5 +1,5 @@
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
 from MainDesign import *
 from SettingsDialog import *
 import os, threading
@@ -80,7 +80,7 @@ class App(QMainWindow):
 
         print("search for wheel file to install")
 
-        filePath = QFileDialog.getOpenFileNameAndFilter(filter="Wheel Files (*.whl)")[0]
+        filePath = QFileDialog.getOpenFileName(filter="Wheel Files (*.whl)")[0]
         fileName = filePath.split("/")[-1]
         self.ui.WheelFileEntry.setText(fileName)
 
